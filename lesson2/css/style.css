@@ -34,12 +34,17 @@ a{
 	margin: 0px auto;
 	
 }
+.fitness img{
+	display: block;
+	float: left;
+	padding-bottom: 5px; 
+}
 .container{
 	padding-top: 50px;
 }
 .main-nav{
     width: 1000px;
-	height: 42px;
+	
     margin-bottom: 40px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#31f9f9+0,2d182c+100 */
 	background: rgb(94,94,94); /* Old browsers */
@@ -50,21 +55,21 @@ a{
 }
 .main-nav ul li{
 	float: left;
-	width: 80px;
-	padding: 8px 1px;
-	padding-left: 30px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;	
+	padding: 10px 30px;
 }
 .main-nav ul li:hover{
 	color: #434343;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
-	padding: 8px 0px;
+	background: #3b3b3b;
+	
 }
 
 .imgWrap{
 	float: right;
 	width: 700px;
-	height: 152px;
 	margin: 0px;
 }
 
@@ -76,12 +81,12 @@ a{
 }
 .frame {
     border: 2px solid #c8c8c8;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 .imgWrap p {
-	padding-top: 40px;
+	padding-top: 30px;
     display: block;
-    front-size: 14px;
+    font-size: 14px;
 }
 .sidebar{
 	float: left;
