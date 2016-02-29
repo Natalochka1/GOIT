@@ -1,72 +1,94 @@
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-extended-webfont.eot');
+    src: url('../fonts/helveticaneue-extended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-extended-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-extended-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-extended-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-extended-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	list-style: none;
 	text-decoration: none;
 }
 html, body{
 	height: 100%;
-	margin: 0;
-	padding: 0;
+	font-family: 'helvetica_neueregular', Tahoma, sans-serif;
 }
 body{
-	background: url(../img/фон.png);
-	background-position: center;
-	
-	background-size: cover;
-    
-	
-}
-.wrapper{
-	display: table;
-	overflow: hidden;
-	table-layout: fixed;
-	width: 100%;
-	height: 100%;
+	background: url(../img/фон.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;    
 }
 
+
 .header{
-	 
+	width: 100%;
+	min-width: 800px;
+	float: right;
+    clear: both;
+	position: relative;
+	display: block;
+	background: #085291;
     
 }
 .block2{
 	margin-right: 20px;
-	padding: 12px;
+	padding: 17px;
 	float: right;
-	background:  background: linear-gradient(to bottom, rgb(80,180,222), rgb(50,120,213));
+	font-family: Tahoma, sans-serif;
+	background: linear-gradient(to bottom, rgb(80,180,222), rgb(50,120,213));
 }
 .block2 a{
 	color:#fff;
-	padding: 0 4px;
-}
-.block1{
-	position: relative;
-	float: right;
-	padding: 12px 17px 12px 50px;
-    text-decoration: none;
-    color: #fff;
+	padding: 10px 10px;
+	font-family: Tahoma, sans-serif;
+	text-decoration: underline;
 
 }
-.icon{
-    display: block;
-    position: absolute;
-    background: url(../img/flag.png) no repeat;
-    left:20px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    width: 21px;
-    height: 23px;
+.block1{
+	
+	top: -5px;
+	float: right;
+    color: #fff;
+    padding-left: 20px;
+    
+
 }
+.block1 img{
+	position: relative;
+	padding: 10px 5px ;
+	float: left;
+
+	padding-left: 0;
+	
+}
+.block1 a{
+	display: inline-block;
+	padding: 17px 20px;
+	font-family: Tahoma, sans-serif;
+}
+.block1:hover{
+	background: #4eabda;
+}
+
 .menu{
 	float: right;
 }
 .menu-list li{
 	display: inline-block;
+	font-size: 16px;
+	font-family: Tahoma, sans-serif;
 }
 .menu-list li a{
 	display: block;
-	padding: 12px 9px;
+	padding: 17px 25px;
 	text-decoration: none;
 	color:#60b5ed;
 }
@@ -75,5 +97,146 @@ body{
 	color: #fff;
 }
 .menu-list li:last-child{
-	border-right: 1px solid #fff;
+	border-right: 1px solid #56a2dc;
+}
+
+.container {
+	
+	width: 500px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0px 0px -250px;
+}
+
+.box {
+	background: rgba(0,0,0,0.5);
+	margin-bottom: 2px;
+	padding: 15px 0px 15px 0px;
+	text-align: center;
+	font-family: Tahoma, sans-serif;
+    color: #fff;
+}
+
+form {
+	background: rgba(0,0,0,0.5);
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+
+
+}
+
+.line {
+	display: inline-block;
+	width: 40%;
+	margin-top: 20px;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #000000;
+}
+.left-line{
+	float: left;
+}
+.right-line{
+	float: right;
+}
+.between-line{
+	display: inline-block;
+	padding: 15px 15px 5px 20px;
+	color: #999999;
+	font-size: 14px;
+}
+.box2{
+	width: 300px;
+    position: relative;
+}
+/*input[type="image"]{
+	background: url(../img/Facebook.png);
+	border-radius: 5px;
+	width: 295px;
+	height: 35px;
+}*/
+
+button{
+	display: block;
+	background: #324780;
+	border-radius: 7px;
+	border: none;
+	outline: none;
+	/*width: 290px;*/
+	height: 37px;
+	opacity: 1;
+	transition: all 0.5s;
+}
+button:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+.box2 button{
+	width: 100%;
+	padding: 0;
+    background: url(../img/Facebook.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+input {
+	display: block;
+	margin-top: 15px;
+	padding: 11px 115px 11px 17px;
+	background: #0f0f0f;
+	color: fff;
+	border: none;
+	border-bottom: 1px solid #484948; 
+	
+}
+
+input[type="text"]:hover{
+	background: #1b5288;
+	box-shadow: 0 0 5px 3px #689bcc;
+	color: #fff;
+}
+input[type="email"]:hover{
+    background: #1b5288;
+	box-shadow: 0 0 5px 3px #689bcc;
+	color: #fff;	
+}
+input[type="password"]:hover{
+background: #1b5288;
+	box-shadow: 0 0 5px 3px #689bcc;
+	color: #fff;
+}
+
+input[type="submit"]{
+    border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	padding: 9px 12px;
+	margin-left: 70px;
+	background: -moz-linear-gradient(top,  rgba(80,174,219,1) 0%, rgba(46,122,196,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(80,174,219,1) 0%,rgba(46,122,196,1) 100%);
+    background: linear-gradient(to bottom,  rgba(80,174,219,1) 0%,rgba(46,122,196,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50aedb', endColorstr='#2e7ac4',GradientType=0 );
+
+}
+p input{
+	display: inline-block;
+	text-align: center;
+}
+p {
+	color: #fff;
+	font-family: Tahoma, sans-serif;
+
+}
+
+.footer{
+	overflow: hidden;
+}
+.form-footer{
+	color: #fff;
+	font-size: 11px;
+	font-family: Tahoma, sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
