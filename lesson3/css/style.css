@@ -2,7 +2,11 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	-webkid-box-sizing: border-box;
+	-mor-box-sizing: border-box;
+	-box-sizing: border-box;
 }
+
 html, body{
 	height: 100%;
 
@@ -11,18 +15,25 @@ html, body{
 body {
 background: rgb(12,119,161);
 }
-/*.clearfix:after{
+.clearfix:after{
 	content: '' ;
 	display: block;
 	clear: both;
-}*/
+}
 .wrapper{
+	display: table;
 	background: white;
-	position: relative;
+	overflow: hidden;
 	margin: 0px auto;
 	z-index: 1;
 	height: 100%;
+	width: 100%;
 	width: 1000px;
+	table-layout: fixed;	
+}
+.W1{
+	display: table-row;
+	height: 100%;
 	-webkit-box-shadow: 0px 0px 10px 4px rgba(30,140,152,1);
 	-moz-box-shadow: 0px 0px 10px 4px rgba(30,140,152,1);
 	box-shadow: 0px 0px 10px 4px rgba(30,140,152,1);
@@ -45,60 +56,77 @@ background: rgb(12,119,161);
 }
 .block1{
 	height: 137px;
+	width: 100%;
 	border-top: 1px solid rgba(94,240,255,1);
 	background: linear-gradient(to bottom, rgba(20,204,224,1), rgba(255,255,255,1));
 }
-.block2{
- height: 145px;
- background: linear-gradient(to bottom, rgba(65,198,211,1), rgba(12,119,161,1));
-}
+
+
 .box1{
-	width: 50%;
+	
 	float: left;
+	padding-left: 25px;
 }
 .box2{
     float: right;
-    padding-left: 150px;   	
+    width: 50%;  	
 }
 .box2 .contacts-list{
-	padding-left: 50%;
+	padding-left: 60%;
+	padding-top: 10px;
 	font-family: Verdana, sans-serif;
-	font-size: 14px;
+	font-size: 12px;
+	
+}
+.contacts-list li a{
+	text-decoration: none;
 }
 .box2 .country-menu li{
-	display: inline-block;
+	display: block;
 	text-align: center;
-	width: 55px;
-	padding-top: 30px;
+	padding-top: 25px;
 }
-.country-menu p{
+.country-menu span{
+	display: block;
+	padding-top: 5px;
 	font-size: 11px;
+
+}
+.country-menu li{
+	float: right;
+	padding-right: 15px;
 }
 .nav-list{
 	margin: 0;
-	padding: o;
-	text-align: center;
+	padding: 0;
 	background: #303030;
+	 position: relative;
+	 z-index: 1;
+	 box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
 }
 .nav-list li{
-	margin: 0 20px;
+	padding: 10px 0px 10px;
 	display: inline-block;
-	position: relative;
 	font-family: Verdana, sans-serif;
 	font-size: 14px;
+	padding-left: 15px;
+    position: relative;
 }
 
 .nav-list a{
-	display: block;
 	text-decoration: none;
-	padding: 10px 10px 10px;
+	padding: 10px 15px 10px 20px;
 	color: #ffffff;
-
+	padding-left: 30px;
+    width: 100%;
 }
 .triangle{
 	position: relative;
+	
 }
-
+.triangle a{
+	padding:;
+}
 .triangle:after{
 	content: '';
 	display: block;
@@ -109,36 +137,41 @@ background: rgb(12,119,161);
 	margin: auto;
 	height: 0;
 	border-style: solid;
-	border-width: 5px 2.5px 0 2.5px;
+	border-width: 5px 3px 0 3px;
 	border-color: #ffffff transparent transparent transparent;
 }
 .sub-list{
-	margin: 0;
-	padding: 0;
+	display: none;
+	z-index: 1;
 	position: absolute;
-	left: -9999px;
+	box-shadow:  0 0 10px 4px rgba(0, 0, 0, 0.5);
 	opacity: 0;
     background: #303030;
+    color: #fff;
 }
-.sus-list li{
+.sub-list li{
 	display: block;
 	text-align: left;
 	background: #303030;
+	padding:10px 20px 10px 20px;
 }
 .sub-list li a{
 	display: block;
-	white-space: nowrap;
-	padding:6px 44px 6px 10px;
-
 }
-.nav-list li:hover ul{
-	left: -15px;
-	opacity: 1;
+.sub-list a:hover{
+	text-decoration: underline;
+}
+.nav-list li:hover .sub-list{
+	left: -5px;
+	top: 38px;
+	opacity: 0.8;
+	display: block;
 }
 .fon{
 	width: 1000px;
 	overflow: hidden;
 	text-align: center;
+	border-bottom: 2px solid black;
 }
 .leftcolumn{
 	width: 210px;
@@ -173,16 +206,14 @@ background: rgb(12,119,161);
 }
 
 .footer{
-	position: relative;
 	overflow: hidden;
 	width: 100%;
-/*	background-color: #0c739f;
-*/	z-index: 1000;
 }
 .footer-wrapper{
 	padding: 8px 0 12px 0;
 	color: #ffffff;
 	font-size: 12px;
 	text-align: center;
+	background: #0c739f;
 }
 
