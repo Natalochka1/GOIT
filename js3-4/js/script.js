@@ -1,83 +1,107 @@
 var data = {
-	'pageTitle' : 'Тест по программированию' ,
-	'categories' : [{
-		'categoryName': '1. Вопрос №1',
-		'categoryList': [{
-			'checkbox',
-             'title': 'Вариант ответа №1'
-         },
-         {
-         	'checkbox',
-         	'title': 'Вариант ответа №2'
-         },
-         {
-         	'checkbox',
-         	'title': 'Вариант ответа №3'
-		}],
-	
-		'categoryName': '2. Вопрос №2',
-        'categoryList' : [{
-        	'checkbox',
-        	'title': 'Вариант ответа №1'
-		},
-		{
-			'checkbox',
-			'title': 'Вариант ответа №2'
-		},
-		{
-			'checkbox',
-			'title': 'Вариант ответа №3'
-	    }]
-    }]
+	pageTitle: 'Тест по программированию',
 
-	'categoryName': '3. Вопрос №3',
-        'categoryList' : [{
-        	'checkbox',
-        	'title': 'Вариант ответа №1'
-		},
-		{
-			'checkbox',
-			'title': 'Вариант ответа №2'
-		},
-		{
-			'checkbox',
-			'title': 'Вариант ответа №3'
-	    }]
-    }]
+	ulQuestions: [{
+		categoriesName: 'Вопрос №1',
 
+		ulAnswers: [
+			'Вариант ответа 1',
+			'Вариант ответа 2',
+			'Вариант ответа 3'
+		]
+	}, {
+		categoriesName: 'Вопрос №2',
+
+		ulAnswers: [
+			'Вариант ответа 1',
+			'Вариант ответа 2',
+			'Вариант ответа 3'
+		]
+	}, {
+		categoriesName: 'Вопрос №3',
+
+		ulAnswers: [
+			'Вариант ответа 1',
+			'Вариант ответа 2',
+			'Вариант ответа 3',
+		]
+	}],
+	inputSubmit: 'Проверить мои результаты'
 }
 
-    var page = {
-    	buildPage: function(){
-    		var wrapper = document.createElement('div');
-    		wrapper.className = 'wrapper';
-    		document.body.appendChild(wrapper);
+for (var i = 0; i < data.ulQuestions.length; i++) {
+	console.log(i + 1 + ' . ' + data.ulQuestions[i].categoriesName);
 
-    		var titlePage = document.createElement('h1');
-    		titlePage.innerHTML = data.pageTitle;
-    		wrapper.appendChild(titlePage);
-    	},
-    	buildList: function() {
-    		for(var i = 0; i < data.categories.length; i++) {
-    			var categoryBlock = document.createElement('checkbox');
-    			categoryBlock.className = 'categoryBlock';
-    			document.querySelector('.wrapper').appendChild(categoryBlock);
+	for (var j = 0; j < data.ulQuestions[i].ulAnswers.length; j++) {
+		console.log(data.ulQuestions[i].ulAnswers[j]);
+	}
+}
 
-    			var titleCategory = document.createElement('h3');
-    			titleCategory.innerHTML = data.categories[i].categoryName;
-    			categoryBlock.appendChild(titleCategory);
+var method = {
+	wrapper: function() {
 
-    			 var element = document.createElement('checkbox');
-    			 element.innerHTML = 'Вариант ответа №1';
-    			 var wrapper = document.querySelector(element);
-    		}
-    	}
-    };
-        console.log(data);
+		var element = document.createElement('div');
+		element.classList.add('wrapper');
 
-    page.buildPage(data.pageTitle);
-    page.buildList(data.checkbox);
+		var pageBuilder = document.querySelector('body');
+		document.body.insertBefore(element, pageBuilder.children[0]);
 
-    page.buildList();
-    page.buildList();
-    console.log(this.document);
+		var title = document.createElement('h1');
+		title.classList.add('mainTitle');
+		element.appendChild(title);
+		title.innerHTML = data.pageTitle;
+
+		var form = document.createElement('form');
+		element.appendChild(form);
+
+	},
+
+	list: function() {
+		var form = document.querySelector('form');
+		console.log(form);
+
+		for (var i = 0; i < data.ulQuestions.length; i++) {
+
+			var ul = document.createElement('ul');
+			ul.classList.add('categoria');
+			form.appendChild(ul);
+
+			var p = document.createElement('p');
+			ul.appendChild(p);
+			p.innerHTML = i + 1 + '. ' + data.ulQuestions[i].categoriesName;
+
+			for (var j = 0; j < data.ulQuestions[i].ulAnswers.length; j++) {
+				var li = document.createElement('li');
+				ul.appendChild(li);
+
+				var label = document.createElement('label');
+				label.classList.add('variant');
+				li.appendChild(label);
+
+				var checkbox = document.createElement('input');
+				label.appendChild(checkbox);
+				checkbox.setAttribute('type', 'checkbox');
+
+				var span = document.createElement('span');
+				label.appendChild(span);
+				span.innerHTML = data.ulQuestions[i].ulAnswers[j]
+			}
+		}
+
+	},
+	submitButton: function() {
+
+		var btn = document.createElement('button');
+		var form = document.querySelector('form');
+		form.appendChild(btn);
+		btn.setAttribute('type', 'submit');
+		btn.innerHTML = data.inputSubmit;
+	},
+	pageInit: function() {
+		method.wrapper(),
+			method.list(),
+			method.submitButton()
+	}
+};
+
+method.pageInit();
