@@ -1,0 +1,50 @@
+div.tabs {
+background: #333;
+padding-top: 15px;
+}
+div.container {  
+margin-bottom: 10px;
+}
+ul.tabNavigation {
+list-style: none;
+margin: 0;
+padding: 0;
+padding-bottom: 8px;
+}
+ul.tabNavigation li {
+display: inline;
+}
+ul.tabNavigation li a {
+padding: 10px 20px;
+background-color: #666;
+color: #000;
+text-decoration: none;
+margin-left: 5px;
+border-radius: 5px;
+font-family: Tahoma, Arial sans-serif;
+}
+ul.tabNavigation li a.selected,
+ul.tabNavigation li a.selected:hover {
+background: #FFF;
+color: #000;
+}
+ul.tabNavigation li a:hover {
+background: #ccc;
+color: #000;
+}
+ul.tabNavigation li a:focus {
+outline: 0;
+}
+div.tabs div {
+padding: 5px;
+margin-top: 3px;
+border: 1px solid #FFF;
+background: #FFF;
+}
+div.tabs div h3 {
+margin-top: 0;
+font-family: Tahoma, Arial sans-serif;
+}
+p {
+	font-family: Tahoma, Arial sans-serif;
+}
