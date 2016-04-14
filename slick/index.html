@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
      <link rel="stylesheet" type="text/css" href="css/style.css">
-       <title>Timer</title>
+       <title>Slider</title>
 <!doctype html>
 <html lang="en">
     <head>
@@ -26,16 +26,47 @@
     </head>
     <body>
 
-                <div class="jcarousel">
-                    
-                        <div><img src="img/MEL_2195.png" width="600" height="400" alt=""></div>
-                        <div><img src="img/DSCN1930.JPG" width="600" height="400" alt=""></div>
-                        <div><img src="img/DSCN2206.JPG" width="600" height="400" alt=""></div>
-                        <div><img src="img/MEL_2207.jpg" width="600" height="400" alt=""></div>
-                        <div><img src="img/MEL_2220.jpg" width="600" height="400" alt=""></div>
-                        <div><img src="img/imagen.jpg" width="600" height="400" alt=""></div>
-                    
+                <div class="slider js-slider" data-current="0">
+                    <div class="slider-track">
+                        <div class="slide"><img src="img/MEL_2195.png" width="600" height="400" alt=""></div>
+                        <div class="slide"><img src="img/DSCN1930.JPG" width="600" height="400" alt=""></div>
+                        <div class="slide"><img src="img/DSCN2206.JPG" width="600" height="400" alt=""></div>
+                        <div class="slide"><img src="img/MEL_2207.jpg" width="600" height="400" alt=""></div>
+                        <div class="slide"><img src="img/MEL_2220.jpg" width="600" height="400" alt=""></div>
+                        <div class="slide"><img src="img/imagen.jpg" width="600" height="400" alt=""></div>
+                    </div>
+                    <button class="prev">Previus</button>
+                    <button class="next">Next</button>
                 </div>
+
+                <style>
+                .slider{
+                    width: 600px;
+                    height: 404px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    position: relative;
+                }
+                .slide{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .slider-track {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 99999999px;
+                }
+                .slider-track: after {
+                    content: '';
+                    display: block;
+                    height: 0;
+                    clear: both;
+                    overflow: hidden;
+                    visibility: hidden;
+                }
+                </style>
 
 </head>
 <body>

@@ -15,9 +15,9 @@
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	list-style: none;
+	/*list-style: none;*/
 	font-family: lucida_sans_unicoderegular;
-}
+}	 
 html,body{
 	height: 100%;
 	margin: 0;
@@ -52,39 +52,63 @@ html,body{
 	width: 100%;
 }
 .contacts-box {
-	margin-bottom: 10px;
-	margin-top: 10px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+
 }
 .contacts {
 	display: inline-block;
-	padding-top: 10px;
+	vertical-align: middle;
+	margin-right: 15px;	
+}
+.contacts img{
+	display: inline-block;
+	vertical-align: middle;
 }
 .contacts a img {
 	display: inline-block;
 }
 .contacts a{
-	font-size: 14px;
+	display: inline-block;
 	text-decoration: none;
 	font-family: Arial, Tahoma;
-	padding-left: 5px;
-	padding-right: 10px;
+	font-size: 18px;
+	color: #5e696d;
 }
 .login{
 	display: inline-block;
+	vertical-align: middle;
 	position: relative;
 	border-radius: 3px;
 	padding-top: 2px;
-    padding-bottom: 6px;
-    padding-left: 10px;	
+    padding-bottom: 1px;
+    padding-left: 5px;	
     background: rgb(31,102,133);
     background: -moz-linear-gradient(top,  rgba(31,102,133,1) 0%, rgba(13,52,88,1) 100%);
     background: -webkit-linear-gradient(top,  rgba(31,102,133,1) 0%,rgba(13,52,88,1) 100%);
     background: linear-gradient(to bottom,  rgba(31,102,133,1) 0%,rgba(13,52,88,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6685', endColorstr='#0d3458',GradientType=0 );
-    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);	
+    box-shadow: 2px 3px 0px 0px rgba(122,122,122,0.5);	
+}
+.user{
+	float: left;
+	background: url('../img/men.png');
+	background-size: 14px;
+	background-repeat: no-repeat;
+	background-position: 2px 4px;
+	padding-left: 25px;
 }
 .login input {
 	font-size: 10px;  
+}
+.login input.enter {
+	background: none;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	width: 30px;
+    padding: 5px 3px;
+    cursor: pointer;
 }
 
 .login span a{
@@ -99,24 +123,23 @@ html,body{
 	text-decoration: none;
 	font-family: Arial, Tahoma;
 	font-size: 10px;
-	padding-left: 10px;
 }
 
 .login input {
-	width: 110px;
+	width: 100px;
 	position: relative;
-	top: -3px;
-	margin-bottom: 1px;
 }
 
 .social-block{
 	display: inline-block;
-	float: right;
-    margin-right: 25px;
-	padding: 3px 7px;
+	vertical-align: middle;
+    float: right;
+    margin-right: 15px;
+    padding: 0px 4px;
     border: 2px solid lightgray;
-    border-radius: 13px;
-    margin-top: 10px;
+    border-radius: 18px;
+    /*margin-top: 5px;*/
+    box-shadow: 2px 2px 5px 2px rgba(122,122,122,0.5);
 }
 .social-block a{
 	padding: 3px 5px 3px 5px;
@@ -128,27 +151,27 @@ html,body{
 	width: 100%;
 }
 .menu{
+	box-shadow: 2px 2px 5px 2px rgba(122,122,122,0.5);
 	display: inline-block;
 	width: 100%;
 	padding-left:50px; 
 	background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d5663+0,040405+100 */
-background: rgb(77,86,99); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(77,86,99,1) 0%, rgba(4,4,5,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(77,86,99,1) 0%,rgba(4,4,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(77,86,99,1) 0%,rgba(4,4,5,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5663', endColorstr='#040405',GradientType=0 ); /* IE6-9 */
-border-radius: 5px;
-box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+    background: rgb(77,86,99); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(77,86,99,1) 0%, rgba(4,4,5,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(77,86,99,1) 0%,rgba(4,4,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5663', endColorstr='#040405',GradientType=0 ); /* IE6-9 */
+    border-radius: 5px;
 }
 
 .menu ul {
 	display: inline-block;
+	vertical-align: middle;
 	margin-left: 30px;
 }
 
 .menu ul li{
-	border: 1px solid black;
 	display: inline-block;
+	vertical-align: middle;
     border-radius: 15px;
     padding: 3px 10px;
 }
@@ -169,30 +192,32 @@ box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 }
 .menu li {
 	padding-right: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 p {
 	display: inline-block;
 	color:#114165;
-	
 }
 .purchase{
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 	float: right;
 	padding-right: 20px;
+	font-size: 11px;
 }
 .purchase img{
 	position: relative;
-	top:10px;
-	padding: 5px;
+	top:5px;	
 }
 .shop{
 	color: #fff;
+	padding-top: 10px;
 }
 .basket{
 	color: #fff;
+	padding-left: 15px;
 }
 
 .shop:after {
@@ -215,35 +240,41 @@ p {
 }
 .sidebar-title{
 	border: 1px solid #79878d;
-	border-radius: 15px;
+	border-radius: 18px;
 	display: inline-block;
-	width: 180px;
-	padding: 4px 0 4px;
+	width: 165px;
+	padding: 2px 2px;
 	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 }
-.sidebar-title img{
-	display: block;
+.catalog {
+	background: url('../img/list.png');
 	float: left;
-    padding-left: 2px;
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
 }
 .sidebar-title p{
-	padding-left: 10px;
+	padding-left: 28px;
 	font-size: 11px;
     
 }
 .filter-box{
 	margin-top: 10px;
-	margin-left: 15px;
+}
+.choise:hover{
+	cursor: pointer;
 }
 .filter-box ul li a{
 	text-decoration: none;
 	color: #465961;
 	font-size: 14px;
-	padding-left: 30px;
 	padding-top: 10px;
 }
 .filter-box li{
 	padding-top: 12px;
+	list-style-type: circle;
+	list-style-position: inside;
+	padding-left: 25px;
 }
 
 .filter-box a:hover{
@@ -253,19 +284,26 @@ p {
 	font-size: 14px;
 	font-weight: 600;
 }
-.filter-title{
+{
 	border: 1px solid #79878d;
 	border-radius: 15px;
 	width: 148px;
 }
-.filter-title img{
-    vertical-align: middle;
-    padding: 2px;
+.round {
+    background: url('../img/kolo.png');
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 5px 3px;	
 }
-.filter-title p{
-	padding-top: 6px;
+.filter-title p {
+padding-left: 30px;
+font-size: 12px;
 }
-
+.filter-title {
+	border: 1px solid #79878d;
+	border-radius: 18px;
+	width: 148px;
+}
 .content{
 	float: left;
 	background: rgb(228,231,232); /* Old browsers */
@@ -277,6 +315,13 @@ margin-top: 10px;
 display: block;
 width: 525px;
 border-radius: 3px;
+}
+.price p {
+	font-size: 16px;
+	text-align: center;
+	color:#114165;
+	font-style: italic;
+	font-weight: bolder;
 }
 .item{
 	display: inline-block;
@@ -293,9 +338,11 @@ border-radius: 3px;
 	padding: 3px 34px 3px 34px;
 	background: #fff;
 }
-.item p{
+.item p {
 	text-align: center;
 	color:#114165;
+	font-style: italic;
+	font-weight: bolder;
 }
 .item a{
 	display: block;
@@ -309,10 +356,12 @@ border-radius: 3px;
 	float: right;
 	width: 180px;
 	margin-top: 10px;
+
 }
 .sidebar-right li{
-	margin-left: 15px;
+	margin-left: 5px;
 	color: #465961;
+	list-style: none;
 }
 
 input[type="checkbox"]{
@@ -377,9 +426,7 @@ border: none;
 .menu-list li:last-child{
 	border-right: none;
 }
-.container p{
-	font-size: 11px;
-}
+
 
 
 
