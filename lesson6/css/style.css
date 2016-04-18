@@ -109,9 +109,10 @@ html,body{
 	width: 30px;
     padding: 5px 3px;
     cursor: pointer;
+    
 }
 
-.login span a{
+.login a span {
 	color: #bfbfbf;
 	text-decoration: underline;
 	padding-left: 15px;
@@ -121,10 +122,13 @@ html,body{
 	position: relative;
 	color: #fff;
 	text-decoration: none;
-	font-family: Arial, Tahoma;
 	font-size: 10px;
 }
-
+.login a p {
+	border-left: 1px solid #fff;
+	color: #fff;
+	padding-left: 7px;
+}
 .login input {
 	width: 100px;
 	position: relative;
@@ -209,25 +213,34 @@ p {
 }
 .purchase img{
 	position: relative;
-	top:5px;	
+	top:5px;
+	display: inline-block;
+	vertical-align: middle;	
 }
 .shop{
 	color: #fff;
 	padding-top: 10px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .basket{
 	color: #fff;
 	padding-left: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 10px;
 }
 
 .shop:after {
 	display: inline-block;
+	vertical-align: middle;
 	content: "0";
 	padding-left: 5px;
 	color: #0d5a8f;
 }
 .basket:after{
 	display: inline-block;
+	vertical-align: middle;
 	content:"0.00 грн";
 	padding-left: 5px;
 	color: #0d5a8f;
@@ -386,6 +399,8 @@ border: none;
 }
 .brand-list {
 	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .brand-list ul li{
 	display: inline-block;
@@ -395,7 +410,7 @@ border: none;
 }
 .footer {	
 	text-align: center;
-	height: 101px;
+	
 }
 .footer p{
 	padding-top: 10px;
