@@ -29,13 +29,16 @@ var data = {
 	inputSubmit: 'Проверить мои результаты'
 }
 
-for (var i = 0; i < data.ulQuestions.length; i++) {
-	console.log(i + 1 + ' . ' + data.ulQuestions[i].categoriesName);
+localStorage.setItem('questions',JOSN.stringifi(data))
+console.log(localStorage.getItem(questions));
+var newObj = JSON.parselocalStorage.getItem('questions'));
+console.log(newObj);
 
-	for (var j = 0; j < data.ulQuestions[i].ulAnswers.length; j++) {
-		console.log(data.ulQuestions[i].ulAnswers[j]);
-	}
-}
+
+
+
+
+
 
 var method = {
 	wrapper: function() {
@@ -94,7 +97,7 @@ var method = {
 		var btn = document.createElement('button');
 		var form = document.querySelector('form');
 		form.appendChild(btn);
-		btn.setAttribute('type', 'submit');
+		btn.setAttribute('type', 'button');
 		btn.innerHTML = data.inputSubmit;
 	},
 	pageInit: function() {
@@ -102,6 +105,21 @@ var method = {
 			method.list(),
 			method.submitButton()
 	}
+pageSend: function(){
+
+	$(.block).each(function(){
+		var #_this = $(this);
+		$_this.find('ul li').each(function(){
+			if ($(this).find('input[type="checkbox"]').hasattr('checked',true)) {
+			console.log(123);	
+			};
+		}
+	}
+
+}
 };
 
 method.pageInit();
+
+var senBtn = document.querySelector('.js-send');
+senBtn.addEventListener('click',page.pageSend());

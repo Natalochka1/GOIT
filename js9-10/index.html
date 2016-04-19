@@ -3,20 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Basic carousel - jCarousel Examples</title>
-
-        <!-- Shared assets -->
-
-        <!-- Example assets -->
-        <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
-        <link rel="stylesheet" href="css/jquery.formstyler.css">
         <script type="text/javascript" src="js/jquery.js"></script>
+           <!-- carusel      -->
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
         <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
         <script src="js/jquery.formstyler.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/checkbox.js"></script>
+        
 
+        <script src="js/main.js"></script>
     </head>
-    <body>league_gothicregular
+    <body>
 
 <div class="wrapper">
 
@@ -24,11 +24,11 @@
                 <div class="jcarousel">
                     <ul>
                         <li><img src="img/MEL_2195.png" width="600" height="400" alt=""></li>
-                        <li><img src="img/DSCN1930.JPG" width="600" height="400" alt=""></li>
-                        <li><img src="img/DSCN2206.JPG" width="600" height="400" alt=""></li>
+                
                         <li><img src="img/MEL_2207.jpg" width="600" height="400" alt=""></li>
                         <li><img src="img/MEL_2220.jpg" width="600" height="400" alt=""></li>
-                        <li><img src="img/imagen.jpg" width="600" height="400" alt=""></li>
+                         <li><img src="img/MEL_2204.jpg" width="300" height="400" alt=""></li>
+                        <li><img src="img/MEL_2629.jpg" width="300" height="400" alt=""></li>
                     </ul>
                 </div>
 
@@ -92,15 +92,15 @@
                     <div class="js-checkbox">
                         <p>Custom Checkbox (jQuery)</p>
                         <span class="niceCheck">
-                            <input type="checkbox" id='name' name="ch1" />
+                            <input type="checkbox" id='name' name="ch1">
                             <label for="name">Name</label>
                         </span>
                         <span class="niceCheck">
-                            <input type="checkbox" id='age' name="ch1" />
+                            <input type="checkbox" id='age' name="ch1">
                             <label for="age">Age</label>
                         </span>
                         <span class="niceCheck">
-                            <input type="checkbox" id='country' name="ch1" />
+                            <input type="checkbox" id='country' name="ch1">
                             <label for="country">Country</label>
                         </span>
                     </div>
@@ -118,6 +118,23 @@
                 <input type="checkbox" name="Option3" id="Option3" >
                 <label for="Option3">Option3</label>
             </div>
+            <form>
+    <fieldset>
+        <legend>Which genres do you like?</legend>
+        <input type="checkbox" name="genre" id="check-1" value="action" />
+        <label for="check-1">Action / Adventure</label>
+        <input type="checkbox" name="genre" id="check-2" value="comedy" />
+        <label for="check-2">Comedy</label>
+        <input type="checkbox" name="genre" id="check-3" value="epic" />
+        <label for="check-3">Epic / Historical</label>
+        <input type="checkbox" name="genre" id="check-4" value="science" />
+        <label for="check-4">Science Fiction</label>
+        <input type="checkbox" name="genre" id="check-5" value="romance" />
+        <label for="check-5">Romance</label>
+        <input type="checkbox" name="genre" id="check-6" value="western" />
+        <label for="check-6">Western</label>
+    </fieldset>
+</form>
 </div>
 
 

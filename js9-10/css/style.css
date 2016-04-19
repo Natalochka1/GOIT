@@ -1,7 +1,7 @@
 
 
 body {
-    background: #F0EFE7;
+    background: #e5baf3;
     margin: 0;
     padding: 0;
     font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -66,7 +66,7 @@ pre {
 }
 
 nav {
-  background-color:rgb(255,100,100);
+  background-color: #6ff2d5;
   padding:10px 0;
  
 }
@@ -82,10 +82,10 @@ nav ul li {
 
 /* sub navigation */
 nav li ul {    
-    background-color:rgb(225,75,75);
+    background-color:#27e3b9;
     position:absolute;
     left:0;
-    top:40px; /* make this equal to the line-height of the links (specified below) */
+    top:40px; 
     width:200px;
 }
 nav li li {
@@ -96,7 +96,7 @@ nav li li {
 nav li li ul {
     position:absolute;
     top:0;
-    left:200px; /* make this equal to the width of the sub nav above */
+    left:200px; 
     margin:0;
 }
 
@@ -114,12 +114,12 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a:active {
-    color:rgb(50,50,50);
+    color:#af76c2;
 }
 
-/* style sub level links */
+/* style sub links */
 nav li li a {
-    border-bottom:solid 1px rgb(200,50,50);
+    border-bottom:solid 1px #9b25c2;
     margin:0 10px;
     padding:0;
 }
@@ -147,24 +147,75 @@ nav li li.dropdown > a {
 
 /*======*/
 
-.niceCheck {
-width: 17px;
-height: 17px;
-display: inline-block;
-cursor: pointer;
-background: url('../img/checkbox-2.png');
-}
-.niceCheck input {
-display: none;
+/*CHECKBOX*/
+fieldset {
+    padding: 0 15px 3em;
+    border: 0;
 }
 
-.js-checkbox .niceCheck{
-display: block;
-margin-bottom: 10px;
+legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: .2em 5px;
 }
-.niceCheck label{
-  padding-left: 25px;
-  padding-top: 10px;
+
+
+/*  wrapper divs */
+
+.custom-checkbox {
+    position: relative;
 }
+
+
+/* input, label positioning */
+
+.custom-checkbox input {
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    margin: 0;
+    z-index: 0;
+}
+
+.custom-checkbox label {
+    display: block;
+    position: relative;
+    z-index: 1;
+    font-size: 1.3em;
+    padding-right: 1em;
+    line-height: 1;
+    padding: .5em 0 .5em 30px;
+    margin: 0 0 .3em;
+    cursor: pointer;
+}
+
+
+/* states */
+
+.custom-checkbox label {
+    background: url(../img/checkbox.gif) no-repeat;
+}
+
+.custom-checkbox label {
+    background-position: -10px -8px;
+}
+
+.custom-checkbox label.hover,
+.custom-checkbox label.focus {
+    background-position: -10px -108px;
+}
+
+.custom-checkbox label.checked {
+    background-position: -10px -208px;
+}
+
+.custom-checkbox label.checkedHover {
+    background-position: -10px -308px;
+}
+
+.custom-checkbox label.focus {
+    outline: 1px dotted #8315a7;
+}
+
 
         
