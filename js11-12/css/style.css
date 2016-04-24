@@ -1,0 +1,67 @@
+ .slider{
+    max-width: 600px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative; 
+    background: #ccc;         
+}
+.slider-list{
+    overflow: hidden;
+}
+.slide{   
+    float: left;               
+}
+.slider-track {
+    width: 99999999px;
+}
+.slider-track:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
+.info {
+  width: 560px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #38e7bc;
+  border-radius: 20px;
+}
+.my-name {
+  padding-left: 157px;
+}
+.my-name,.my-surname {
+  font-size: 30px;
+  font-family: Arial, Tahoma sans-serif;
+  color: #148495;
+}
+.email {
+  color: #0e9c47;
+  font-size: 24px;
+  padding-left: 174px;
+}
+.college {
+  font-family: Arial, Tahoma sans-serif;
+  color: #148495;
+  font-size: 24px;
+  padding-left: 162px;
+}
+.country,.city {
+  font-size: 22px;
+  font-family: Arial, Tahoma sans-serif;
+  color: #148495;
+  padding-left: 221px;
+}
+.img {
+  width: 300px;
+  padding-left: 126px;
+}
+.title {
+  display: none;
+}
