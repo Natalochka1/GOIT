@@ -646,6 +646,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 }
 
 @media(max-width: 768px) {
+
   .container {
     width: 480px;
   }
@@ -658,6 +659,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   .menu-list {
   	display: none;
   }
+  .list-item{
+  	float: none;
+  }
+  
+
     .dropdown {
     display: block;
     text-align: center;
@@ -779,7 +785,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   .designer {
   	padding: 20px 0px 40px 150px;
   }
-
+}
 
   @media(max-width: 480px) {
   .container {
@@ -792,8 +798,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 
 
    .menu-item {
-    display: none;
-  }
+    	display: none;
+  	}
   .menu-item_active {
     display: block;
   }
@@ -804,7 +810,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   }
 
 
-
+	.list-item:hover .drop{
+		display: block;
+	}
 
   .main-block img {
   	display: none;
@@ -844,4 +852,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   .designer {
   	padding: 30px 0 70px 90px;
   }
-
+}
