@@ -21,7 +21,7 @@ html, body{
 	font-family: 'helvetica_neueregular', Tahoma, sans-serif;
 }
 body{
-	background: url(../img/фон.png) no-repeat center center fixed;
+	background: url("../images/фон.png") no-repeat center center fixed;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
     -o-background-size: cover;
@@ -177,7 +177,7 @@ button:hover{
 .box2 button{
 	width: 100%;
 	padding: 0;
-    background: url(../img/Facebook.png) 50% 50% no-repeat;
+    background: url(../../images/Facebook.png) 50% 50% no-repeat;
     background-size: cover;
 }
 

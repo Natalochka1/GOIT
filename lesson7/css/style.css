@@ -119,9 +119,9 @@ a{
 	display: inline-block;
 }
 .menu-item a {
-	font-size: 20px;
+	font-size: 21px;
 	color: #fff;
-	padding: 10px 25px;	
+	padding-right: 45px;	
 	font-family: 'league_gothicregular';
 }
 .menu-item a:hover {
@@ -514,6 +514,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	float: left;
 	display: inline-block;
 	width: 200px;
+	padding-bottom: 20px;
 }
 .menu-list {
 	display: inline-block;
@@ -523,12 +524,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 }
 .menu-item {
 	display: inline-block;
-	padding-bottom: 80px;
-	padding-top: 20px;
 }
 .menu-item a {
 	font-size: 21px;
-	padding: 10px 28px;
+	padding-right: 59px;
 }
 .list-item  {
 	float: left;
@@ -608,15 +607,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 .read_more {
 	margin-right: 75px;
 }
-/*.info-block {
-	width: 238px;
-}
-.comment-box {
-	width: 238px;
-}
-.news-box {
-	width: 238px;
-}*/
 .menu-bottom li a {
 	font-size: 14px;
 	padding: 15px 25px 40px;
@@ -644,6 +634,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	float: left;
 	padding-left: 20px;
 }
+}
 
 @media(max-width: 768px) {
 
@@ -655,16 +646,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   	padding-left: 150px;
   	display: inline-block;
   	position: relative;
+  	padding-bottom: 33px;
+  }
+  .dropdown:hover.drop {
+  	display: block;
+  }
+  .list-item:hover+.drop {
+  	display: block;
+  }
+  .drop:hover {
+  	display: block;
   }
   .menu-list {
   	display: none;
   }
   .list-item{
   	float: none;
+  	position: relative;
+  	z-index: 1;
+  	color: #fff;
+  	text-transform: uppercase;
+  	font-size: 21px;
+  	font-family: 'league_gothicregular'; 
   }
-  
-
-    .dropdown {
+  .dropdown {
     display: block;
     text-align: center;
   }
@@ -675,10 +680,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   }
   .dropdown {
     position: relative;
+    padding-bottom: 24px;
+    padding-left: 108px;
+    text-decoration: none;
+  }
+  .drop .list-item--first--active{
+  	text-decoration: underline;
   }
   .drop {
     position: absolute;
-    top: 7px;
+    top: -2px;
     right: 0;
     left: 0;
     z-index: 100;
@@ -689,33 +700,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
     border-radius: 8px;
     background: rgba(61, 48, 70, .8);
   }
-  .dropdown--list {
-    display: block;
+  .dropdown .list-item {
+  	padding: 0;
+  	display: block;
+  	width: 246px;
+  	height: 45px;
+  	padding-top: 10px;
   }
   .dropdown .list-item:hover {
-    padding-bottom: 8px;
-    border-bottom: 2px solid #edbfff;
+  	display: block;
+  	width: 246px;
+  	height: 45px;
+  	padding-top: 10px;
+    border-bottom: 3px solid #edbfff;
     background: rgba(43, 34, 49, 1);
+    text-decoration: none;
   }
-  .dropdown .first {
-    border-radius: 8px 8px 0 0;
+  .last {
+  	border-radius: 0 0 8px 8px;
+  	border-bottom: none;
   }
   .list-item .last {
-    border: none;
-  }
-  .dropdown .home:hover {
-    padding-bottom: 10px;
-    border: none;
-    background: none;
+    border-bottom: none;
   }
   .item--first {
     border-top: none;
+    text-decoration: underline;
   }
-  .item--last {
-    border-bottom: none;
-  }
+ 
   .first {
     border-radius: 8px 8px 0 0;
+     border-top: none;
   }
 .main-block p {
 	font-size: 30px;
@@ -727,10 +742,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	display: none;
 }
 .main-block img {
-	top: -295px;
-	left: 8px;
+	position: absolute;
+	top: -80px;
+	left: 270px;
 }
-
   .column{
   	display: block;
   	width: 100%;
@@ -794,9 +809,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   .logo {
   	padding-left: 70px;
   }
-
-
-
    .menu-item {
     	display: none;
   	}
@@ -805,11 +817,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   }
   .menu-item_active:hover ..menu-item {
     display: block;
-
     opacity: .7;
   }
-
-
+.dropdown {
+	padding-left: 28px;
+	text-decoration: underline;
+}
 	.list-item:hover .drop{
 		display: block;
 	}
