@@ -3,28 +3,24 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>slick</title>
+        <title>slider</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        
-        <script type="text/javascript" src="js/slick.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/jQuery.Carousel.js"></script>       
         <script src="js/template.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
 
-                <div class="slider js-slider" data-current="0">
-                                          
-                            <div class="slide"><img src="img/DSCN1743.JPG" width="600" height="400"  alt=""></div>
-                            <div class="slide"><img src="img/DSCN1751.JPG" width="600" height="400" alt=""></div>
-                            <div class="slide"><img src="img/DSCN1750.JPG" width="600" height="400" alt=""></div>
-                            <div class="slide"><img src="img/DSCN1761.JPG" width="600" height="400" alt=""></div>
-                            <div class="slide"><img src="img/DSCN1918.JPG" width="600" height="400" alt=""></div>
-                            <div class="slide"><img src="img/DSCN2205.JPG" width="600" height="400" alt=""></div>
-                                          
-                </div>
+        <div class="content clearfix">
+            <div class="carousel-list">
+                <div class="carousel-item"><img src="img/DSCN1743.JPG" alt=""></div>
+                <div class="carousel-item"><img src="img/DSCN1750.JPG" alt=""></div>
+                <div class="carousel-item"><img src="img/DSCN1751.JPG" alt=""></div>
+                <div class="carousel-item"><img src="img/DSCN1761.JPG" alt=""></div>
+                <div class="carousel-item"><img src="img/DSCN1918.JPG" alt=""></div>
+                <div class="carousel-item"><img src="img/DSCN2205.JPG" alt=""></div>
+            </div>
 
 
     <script type="text/html"  id='test'>
@@ -41,9 +37,7 @@
                 </div>
             <% }; %>
         </script>            
- 
-        <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    </div>
+    
 </body>
 </html>

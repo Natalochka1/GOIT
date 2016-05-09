@@ -1,34 +1,67 @@
- .slider{
-    max-width: 600px;
-    max-height: 400px;
-    margin: 0 auto;
-    position: relative; 
-    background: #ccc;         
+body{
+  background: #c9f0f5;
 }
-.slider-list{
-    overflow: hidden;
+.content {
+  width: 766px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
-.slide{   
-    float: left;               
+* {
+  list-style: none;
 }
-.slider-track {
-    width: 99999999px;
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
 }
-.slider-track:after {
-    content: '';
-    display: block;
-    height: 0;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
+.carousel-item {
+  display: block;
+  float: left;
 }
+.carousel-item img {
+  max-width: 600px;
+}
+.carousel-list {
+  position: relative;
+  width: 10000px;
+}
+.carousel-hider {
+  float: left;
+  width: 600px;
+  height: 449px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.carousel-arrow-left,
+.carousel-arrow-right {
+  display: block;
+  float: left;
+  padding: 2px;
+  border: 2px solid #41c8d0;
+  cursor: pointer;
+  border-radius: 8px;
+  
+}
+.carousel-arrow-left {
+  margin-right: 25px;
+  color: #41c8d0;  
+}
+.carousel-arrow-right {
+  margin-left: 25px;
+  color: #41c8d0;  
+}
+
+
+
 
 
 
 .info {
   width: 560px;
   height: 400px;
-  margin: 0 auto;
+  margin-left: 440px;
   padding: 20px;
   border: 2px solid #38e7bc;
   border-radius: 20px;
@@ -45,6 +78,9 @@
   color: #0e9c47;
   font-size: 24px;
   padding-left: 174px;
+}
+.email:hover {
+  color: #12f768;
 }
 .college {
   font-family: Arial, Tahoma sans-serif;
