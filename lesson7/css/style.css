@@ -140,12 +140,12 @@ a{
 	position: relative;
 }
 .main-description{
-	padding-bottom: 42px;
+	padding-bottom: 84px;
 	padding-top: 40px;
 }
 .main-block img {
 	position: absolute;
-	top:-10px;
+	top:-30px;
 	right: 100px;
 }
 .main-block p {
@@ -373,6 +373,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	font-size: 40px;
 	font-family: 'league_gothicregular';
 }
+.logo_name a:hover {
+	color: #edbfff;
+}
 .comment-box {
 	display: inline-block;
 	float: left;
@@ -468,6 +471,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	padding-bottom: 20px;
 }
 .menu-list {
+	padding: 0;
 	display: inline-block;
 	float: left;
 	list-style: none;
@@ -503,10 +507,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	font-size: 20px;
 }
 .main-block img {
-	top: -425px;
-	left: -26px;
+	top: -27px;
+	right: 0px;
 	float: right;
-	position: relative;
+	position: absolute;
 }
 .column {
 	width: 245px;
@@ -561,7 +565,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 .designer {
 	float: none;
 	font-size: 10px;
-	padding-left: 100px;
 }
 .brand-list li {
 	display: none;
@@ -624,6 +627,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
     display: block;
     border-top: 1px solid #533f5a;
     border-bottom: 1px solid #36283e;
+    border-radius: 10px;
   }
   .dropdown {
     position: relative;
@@ -631,11 +635,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
     padding-left: 108px;
     text-decoration: none;
   }
-  /*.drop .list-item--first--active{
-  	text-decoration: underline;
-  }*/
-  .drop {
-  	
+  .drop {  	
   	padding: 0;
     position: absolute;
     top: -2px;
@@ -741,10 +741,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
   	padding-top: 30px;
   }
   .menu-bottom li a {
-  	padding: 25px 30px 10px 10px;
+  	padding: 25px 20px 10px 10px;
   }
   .designer {
-  	padding: 20px 0px 40px 150px;
+  	padding: 20px 0px 40px 170px;
   }
 }
 
