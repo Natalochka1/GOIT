@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>JS DOM</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<style>
-		h1{font-size: 20px;text-align: center;margin-bottom: 40px;}
-		ul{list-style: none;}
-		form{width: 500px;margin: 0 auto;}
-		.btn{display: block;margin: 40px auto;}
-		ul{padding: 0 0 0 15px;}
-	</style>
+	<title>Тест</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
-	
 
-
-	<script src="js/main.js"></script>
+	<div class="wrapper">
+		<script type="text/template" id="tmpl">
+<h1><%=pageTitle%></h1><form><h2 class="question"><%=ulQuestions[0]%></h2><ul title="Виберите вариант ответа"><li class="answer"><label><input class="single" type="checkbox"><span><%=ulQuestions[1].ulAnswers[0]%></span></label></li><li class="answer"><label><input class="single" type="checkbox"><span><%=ulQuestions[1].ulAnswers[1]%></span></label></li><li class="answer"><label><input class="single" type="checkbox"><span><%=ulQuestions[1].ulAnswers[2]%></span></label></li></ul><h2 class="question"><%=ulQuestions[2]%></h2><ul><li class="answer"><label><input type="checkbox"><span><%=ulQuestions[3].ulAnswers[0]%></span></label></li><li class="answer"><label><input type="checkbox"><span><%=ulQuestions[3].ulAnswers[1]%></span></label></li><li class="answer"><label><input type="checkbox"><span><%=ulQuestions[3].ulAnswers[2]%></span></label></li></ul><h2 class="question"><%=ulQuestions[4]%></h2><ul><li class="answer"><label><input type="checkbox"><span><%=ulQuestions[5].ulAnswers[0]%></span></label></li><li class="answer"><label><input type="checkbox"><span><%=ulQuestions[5].ulAnswers[1]%></span></label></li><li class="answer"><label><input type="checkbox"><span><%=ulQuestions[5].ulAnswers[2]%></span></label></li></ul><button title="правильные ответы: 2,4,5,8,9" type="submit"><%=inputSubmit%></button></form>
+		</script>
+	</div>
+	<div class="footer"></div>
 </body>
 </html>

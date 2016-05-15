@@ -1,8 +1,7 @@
 .header{
     width: 100%;
-    min-width: 800px;
     display: block;
-    background: #085291;
+    background: #fff;
     margin-bottom: 150px;
 }
 &:after {
@@ -12,4 +11,15 @@
     overflow: hidden;
     visibility: hidden;
     height: 0;
+}
+
+
+.search-form .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-right: 17px;
+    z-index: 1;
+    color: #4f5b66;
+
 }
