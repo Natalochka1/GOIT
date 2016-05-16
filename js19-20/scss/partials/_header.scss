@@ -2,7 +2,6 @@
     width: 100%;
     display: block;
     background: #fff;
-    margin-bottom: 150px;
 }
 &:after {
     content: " ";
@@ -12,14 +11,13 @@
     visibility: hidden;
     height: 0;
 }
-
-
-.search-form .icon {
-    position: absolute;
-    top: 50%;
-    margin-left: 17px;
-    margin-right: 17px;
-    z-index: 1;
-    color: #4f5b66;
-
+.container {
+    width: 1160px;
+}
+.logo_name {
+    float: left;
+    padding: 32px 0 32px; 
+}
+.in_network {
+    float: right;   
 }
