@@ -1,0 +1,33 @@
+
+.service-block {
+	overflow: hidden;
+	background: #2a2d32;
+	padding-top: 30px;
+	padding-bottom: 42px;
+}
+.our_service {
+	display: block;
+	float: left;
+	width: 260px;
+	margin-right: 40px;
+}
+.our_service:last-child {
+	float: right;
+	margin: 0;
+}
+.our_service span {
+	display: block;
+	padding: 20px 45px;
+	font-size: 19px; 
+	color: #fff;
+}
+.is-hover{
+	display: block;
+}
+.is-hover:hover:before{
+	content: '';
+	display: block;
+	width: 260px;
+	height: 260px;
+	// background: url(../img/rectangle&plus.png); no-repeat;
+}

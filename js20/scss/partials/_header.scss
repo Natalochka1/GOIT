@@ -1,0 +1,16 @@
+.container {
+	width: 1160px;
+}
+.logo_name {
+    img {
+	   padding-top: 30px;
+	   padding-bottom: 30px;
+}
+}
+.in_network {
+	display: block;
+	float: right;
+}
+.facebook {
+	@include retina-sprite($fb-gray-group);
+}

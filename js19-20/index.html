@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <title></title>
-    <link rel="stylesheet" href="css/application.css">
-   
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+<title></title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="js/vendor/slick.js"></script> -->
+<script type="text/javascript" src="js/vendor/slick.min.js"></script> 
+<script src="js/custom/script.js"></script>
+    <!-- CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+<link rel="stylesheet" href="css/application.css">
+
+
 </head>
 <body>
  <div class="wrapper">
      <div class="W1">
         <header class="header clearfix">
             <div class="container">
-                <div class="logo_name">
-                    <a href="#"><img src="img/logo-name.png"></a>
-                </div>
+                
+                    <a class="logo_name" href="#" ><img src="img/logo.png"></a>
+                
                 <div class="in_network">
-                    <a href="#"><img src="img/iconsNetworks.png"></a>
+                    <a href="#" class="facebook in_network__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="twitter in_network__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="network in_network__link"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                    <a href="#" class="linkedin in_network__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" class="skype in_network__link"><i class="fa fa-skype" aria-hidden="true"></i></a>
                 </div>
                 <div class="menu">
                     <ul class="menu-list">
@@ -28,48 +39,49 @@
                         <li><a class="is-active" href="#">NEWS</a></li>
                         <li><a class="is-active" href="#">SHOP</a></li>
                         <form class="search-form">
-                         <input type="text" placeholder="Search" autofocus>
-                         <span><i class="fa fa-search"></i></span>
-                      </form>
+                         <input type="text" placeholder="Search">
+                         <!-- <input type="button" > -->
+                         <input type="button"><i class="fa fa-search" aria-hidden="true"></i>             
+                         </form>
                     </ul>
-                      
                 </div>
-                <div class="Carousel clearfix">
-                  <img src="img/slider1.png">
-                  <img src="img/slider2.jpg">
+                <div class="fade">
+                  <div><img src="img/slider1.png"></div>
+                  <div><img src="img/slider.jpg"></div>
+                  <div><img src="img/slider.jpg"></div>
                 </div>
                 <div class="about_company">
                     <div class="settings">
-                        <span>01</span>
-                        <img src="img/iconSettings.png">
-                        <span>Power Inside</span>
+                        <span class="number">01</span>
+                         <img src="img/iconSettings.png"> 
+                        <h3>Power Inside</h3>
                     <div class="text">
                         <span>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris.</span>                     
                     </div>
                     <div class="read">
-                        <a href="#">read more</a>
+                        <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>                     
                     </div>
-                      <div class="tehnologies">
-                        <span>02</span>
-                        <img src="img/Settings.png">
-                        <span>New Tehnologies</span>
+                      <div class="settings">
+                        <span class="number">02</span>
+                        <img src="img/iconParams.png">
+                        <h3>New Tehnologies</h3>
                       <div class="text">
                         <span>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris.</span>                     
                       </div> 
                       <div class="read">
-                          <a href="#">read more</a>
+                          <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                       </div>                     
                       </div>
-                        <div class="logistic">
-                            <span>03</span>
+                        <div class="settings">
+                            <span class="number">03</span>
                             <img src="img/iconTruck.png">
-                            <span>Fast Support</span>
+                            <h3>Fast Support</h3>
                         <div class="text">
                             <span>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris.</span>                     
                         </div> 
                         <div class="read">
-                            <a href="#">read more</a>
+                            <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>                     
                       </div>
                 </div>                 
@@ -77,9 +89,9 @@
         </header>
         <div class="service-block">
             <div class="container">
+            <div class="title"><p>Our Services</p></div>
                 <div class="our_service">
-                    <p>Our Services</p>
-                    <a href="#"><img src="img/image1.png">
+                    <a class="is-hover" href="#"><img src="img/image1.png">
                     <span>Vehicula Tempus</span></a>
                 </div>
                 <div class="our_service">
@@ -97,38 +109,50 @@
             </div>                                
         </div>
         <div class="content-block">
+          <div class="container">
             <div class="news">
               <span>Latest News</span>
             <div class="news_box">
-                <img src="img/News1.png">
+                <img src="img/imgNews1.png">
+                <div class="date-month">Jan</div>
+                <div class="date-number">23</div>
                 <a href="#">Advanced Machinery Help Inprove Quality</a>
-                <span>by <a href="#">cmsmasters</a> comments (<a href="#">6</a>)</span>
+                <span class="comment">by <a href="#"> cmsmasters </a> Comments (<a href="#">6</a>)</span>
+                 <p>Cum sociis natoque penatibus et magnis dis parturient
+                    ontesmus. Pro vel nibh et elit mollis commodo et nec
+                    augueique Nemo enim ipsam voluptatem quia ptas sit
+                    aspernatur samomo enim ipsam voluptatem.</p>
             </div>
-            <div class="news_box2">
-                <img src="img/News2.png">
-                <a href="#">Powerfull Techniques Advanced Service</a>
-                <span>by<a href="#">cmsmasters</a>comments (<a href="#">3</a>)</span>
+            <div class="news_box">
+                <img src="img/imgNews2.png">
+                <div class="date-month">Jan</div>
+                <div class="date-number">21</div>
+                <a class="technic" href="#">Powerfull Techniques Advanced Service</a>
+                <span class="comment">by <a href="#"> cmsmasters </a> Comments (<a href="#">3</a>)</span>
+                 <p>Cum sociis natoque penatibus et magnis dis parturient
+                    ontesmus. Pro vel nibh et elit mollis commodo et nec
+                    augueique Nemo enim ipsam voluptatem quia ptas sit
+                    aspernatur samomo enim ipsam voluptatem.</p>
             </div>
             </div>
-            <div class="banners">
-                <span>Banners Place</span>
-                <div class="panel">
-                    <span><a href="#">ACCOPRDION PANEL 1</a></span>
-                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</P>
+            <div class="banners">              
+                <span>Banners Place</span>              
+                <div class="accordion">
+                    <div class="plus"><span>ACCORDION PANEL 1</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. </P>
+                                 
+                    <div class="plus"><span>ACCORDION PANEL 2</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla.</P>
+                                
+                    <div class="plus"><span>ACCORDION PANEL 3</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla.</P>
+                 
+                    <div class="plus"><span>ACCORDION PANEL 4</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla.</P>
                 </div>
-                 <div class="panel">
-                    <span><a href="#">ACCOPRDION PANEL 2</a></span>
-                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</P>
-                </div>
-                 <div class="panel">
-                    <span><a href="#">ACCOPRDION PANEL 3</a></span>
-                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</P>
-                </div>
-                 <div class="panel">
-                    <span><a href="#">ACCOPRDION PANEL 4</a></span>
-                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</P>
-                </div>
-            </div>
+             </div>
+             </div>
+             </div> 
             <div class="brands">
                 <div class="container">
                   <ul>
@@ -141,9 +165,9 @@
                   </ul>
                 </div>
             </div>
-            <footer class="footer">
+          <div class="information">  
             <div class="container">
-              <div class="footer-list">
+              <div class="information-list">
                   <span>SOCIALS</span>
                   <ul>
                       <li><a href="#">Facebook</a></li>
@@ -152,7 +176,7 @@
                       <li><a href="#">Vimeo</a></li>
                   </ul>
               </div>
-              <div class="footer-list">
+              <div class="information-list">
                   <span>LINKS</span>
                   <ul>
                       <li><a href="#">How to Write a Blog</a></li>
@@ -161,7 +185,7 @@
                       <li><a href="#">20 Post Idees</a></li>
                   </ul>
               </div>
-              <div class="footer-list">
+              <div class="information-list">
                   <span>BLOGROLL</span>
                   <ul>
                       <li><a href="#">Blogs Blog</a></li>
@@ -170,7 +194,7 @@
                       <li><a href="#">Wordpress Blog</a></li>
                   </ul>
               </div>
-              <div class="footer-list">
+              <div class="information-list">
                   <span>ABOUT US</span>
                   <ul>
                       <li><a href="#">Agriculture</a></li>
@@ -179,27 +203,25 @@
                       <li><a href="#">Investor Relations</a></li>
                   </ul>
               </div>
+              </div>
+              </div>
+              <footer class="footer">
+              <div class="container">
               <div class="contacts">
                   <div class="adress">
                       <img src="img/point.png">
-                      <span>Aliquam sodales 112 33 75 Mauris</span>
+                      <a><span>Aliquam sodales 112 33 75 Mauris</span></a>
                   </div>
                   <div class="fone_number">
                       <img src="img/iconPhone.png">
                       <a href="callto:0441234567">+38-044-123-45-67</a>
                   </div>
-                  <span>&reg 2014 Build Home</span>
+                  <span>&reg; 2014 Build Home</span>
               </div>
-              </div>
+              </div>              
             </footer>
-
-        </div>   
-
-
+      
      </div>
  </div> 
-          
- 
-
 </body>
 </html>
