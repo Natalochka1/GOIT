@@ -21,13 +21,3 @@
 	font-size: 19px; 
 	color: #fff;
 }
-.is-hover{
-	display: block;
-}
-.is-hover:hover:before{
-	content: '';
-	display: block;
-	width: 260px;
-	height: 260px;
-	// background: url(../img/rectangle&plus.png); no-repeat;
-}
