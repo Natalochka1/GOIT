@@ -41,7 +41,7 @@ $(function() {
 
 
 
-  // part two
+  // second part 
   function Human(name, age, sex, height, weight) {
     this.name = name;
     this.age = age;
@@ -50,111 +50,41 @@ $(function() {
     this.weight = weight;
   }
 
-  function Worker(workPlace, salary) {
-    this.workPlace = workPlace;
+
+  Human.prototype.constructor = Human;
+
+  function Worker(name, age, sex, height, weight, job, salary){
+    Human.apply(this, arguments);
+    this.job = job;
     this.salary = salary;
-  } 
-  Worker.prototype.toWork = function () {
-    return 'go work!';
   }
 
+  Worker.prototype = Object.create(Human.prototype);
 
-  function Student (studyPlace, grant) {
-    this.studyPlace = studyPlace;
-    this.grant = grant;
-  }
-  Student.prototype.watch = function () {
-    console.log('time to watch TV shows');
+  Worker.prototype.work = function(){
+    console.log("I'm work");
   }
 
+  Worker.prototype.constructor = Worker;
 
-  // Worker.prototype = Object.create(Human.prototype);
-  // Student.prototype = Object.create(Human.prototype);
-
-  
-
-  var developer = new Worker('it', 300);
-  developer = new Human('Kolia', 20, 'male', 190, 100);
-
-
-  // console.dir(developer);
-  // console.log(developer.age);
-
-
-  function Human() {
-    this.name = 'Dansis';
-    this.age = 19;
-    this.sex = 'male';
-    this.height = 190
-    this.weight = 90;
+  function Student(name, age, sex, height, weight, study, stipend){
+    Human.apply(this, arguments);
+    this.study = study;
+    this.stipend = stipend;
   }
 
-  function Worker(workPlace, salary) {
-    this.workPlace = workPlace;
-    this.salary = salary;
-  } 
-  Worker.prototype.toWork = function () {
-    return 'go work!';
+  Student.prototype = Object.create(Human.prototype);
+
+  Student.prototype.watchTvShows = function(){
+    console.log("I'm watch TV shows");
   }
 
+  Student.prototype.constructor = Student;
 
-  function Student (studyPlace, grant) {
-    this.studyPlace = studyPlace;
-    this.grant = grant;
-  }
-  Student.prototype.watch = function () {
-    console.log('time to watch TV shows');
-  }
-
-
-  Worker.prototype = new Human();
-  Student.prototype = new Human();
-
-  var worker1 = new Worker('It', 200);
-
-  console.log(worker1.name);
-  console.log(worker1.toWork());
+  worker1 = new Worker('Dima', 21, 'male', '187cm', '85kg', 'it', '12000');
+  console.log(worker1);
+  worker2 = new Worker('Витя', 37, 'мужской', '192cm', '96kg', 'завод', '3000');
+  console.log(worker2);
+  student1 = new Student('Миша', 20, 'мужской', '183cm', '90kg', 'студент института', '0.00');
+  console.log(student1);
 });
-
-
-// function Human(name, age, sex, height, weight) {
-//  this.name = name;
-//  this.age = age;
-//  this.sex = sex;
-//  this.height = height;
-//  this.weight = weight;
-// }
-
-
-
-// function Worker(workPlace, salary) {
-//  this.workPlace = workPlace;
-//  this.salary = salary;
-//  Human.apply(this, arguments);
-// }
-// inherit(Worker, Human);
-// Worker.prototype.toWork = function() {
-//  return  this.name + ', go to work!';
-// }
-
-
-// function Student(studyPlace, grant) {
-//  this.studyPlace = studyPlace;
-//  this.grant = grant;
-//  Human.apply(this, arguments);
-// }
-// inherit(Student, Human);
-// Student.prototype.watch = function() {
-//  return  this.name + ', time to watch TV shows';
-// }
-
-
-// function inherit(C, P) {
-//  var F = function() {};
-//  F.prototype = P.prototype;
-//  C.prototype = new F();
-// }
-
-// var developer = new Worker('It', '700$', "Ivan", 21, 'male', 190, 60);
-// var copywriter = new Worker('It', '300$', "Danis", 32, 'male', 160, 80);
-// var economist = new Student("Lena", 20, 'girl', 176, 50 ,'ХНУ', 0 );

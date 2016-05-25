@@ -7,6 +7,7 @@
 }
 .our_service {
 	display: block;
+	position: relative;
 	float: left;
 	width: 260px;
 	margin-right: 40px;
@@ -15,9 +16,22 @@
 	float: right;
 	margin: 0;
 }
-.our_service span {
+.our_service a h2 {
 	display: block;
 	padding: 20px 45px;
 	font-size: 19px; 
 	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+.our_service a:hover h2{
+	color: #f4b60d;
+}
+.our_service a span{
+	position: absolute;
+	display: none;
+	bottom: 94px;
+	opacity: 0.6;
+}
+.our_service a:hover span{
+	display: block;
 }
