@@ -13,13 +13,13 @@ button[type=button]{
 	width: 20px;
 	height: 20px;
 	float: left;
-	border: 3px solid #fff;
+	border: 3px solid $white;
 	margin-right: 22px;
 	position: relative;
     cursor: pointer;
 }
 .slick-active{
-  background: #000;
+  background: $black;
 }
 
 button.slick-next.slick-arrow{

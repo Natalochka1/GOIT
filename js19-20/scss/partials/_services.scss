@@ -1,7 +1,7 @@
 
 .service-block {
 	overflow: hidden;
-	background: #2a2d32;
+	background: $service;
 	padding-top: 30px;
 	padding-bottom: 42px;
 }
@@ -19,12 +19,12 @@
 .our_service a p {
 	
 	padding: 20px 45px;
-	font-size: 19px; 
-	color: #fff;
-	font-family: 'Ubuntu', sans-serif;
+	font-size: $fontSize-base; 
+	color: $white;
+	font-family: $font-ubunta;
 }
 .our_service a:hover p{
-	color: #f4b60d;
+	color: $yellow;
 }
 .our_service a span{
 	position: absolute;
