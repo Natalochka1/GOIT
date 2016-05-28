@@ -3,22 +3,24 @@
 	position: relative;
 }
 .menu ul {
-	display: inline-block;
+	display: block;
 	width: 100%;
-	padding: 0;
+	padding-left: 0;
 }
 .menu-list li {
 	display: inline-block;
-	padding: 20px 33px;
 	border-right: 1px solid #0f0f10;	
 }
 .menu-list {
+	display: block;
 	background: #2a2d32;
 }
 .menu-list li a {
 	color: #fff;
     font-family: 'Ubuntu', Arial, sans-serif;
     font-size: 14px;
+    padding: 20px 33px;
+    display: inline-block;
 }
 .menu-list li a:hover {
 	color: #f4b60d;

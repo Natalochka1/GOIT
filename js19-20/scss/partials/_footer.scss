@@ -40,6 +40,27 @@
 .fone_number a:hover{
 	color:  #248cec;
 }
+.email{
+	display: inline-block;
+	float: left;
+}
+.email img{
+	display: block;
+	float: left;
+	padding-top: 14px;
+	padding-left: 30px;
+	padding-right: 15px;
+}
+.email a{
+	color: #7d7e81;
+	font-size: 14px;
+	padding-top: 12px; 
+	display: inline-block;
+	float: left;
+}
+.email a:hover{
+	color:  #248cec;
+}
 .contacts span{
 	display: block;
 	float: right;

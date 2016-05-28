@@ -137,15 +137,31 @@ a.technic {
 	padding: 10px 0 10px 55px;
 }
 .plus:hover{
+	color: #fff;
 	background: #f4b60d;
 	cursor: pointer;
-
+}
+.plus:active{
+	color: #fff;
+	background: #f4b60d;
+	cursor: pointer;
 }
 .plus span:hover{
+	color: #fff;
+}
+.plus.active span{
 	color: #fff;
 }
 .plus:hover:before{
 	content: '-';
 	color: #fff;
 	padding-right: 25px;
+}
+.plus.active:before{
+	content: '-';
+	color: #fff;
+	padding-right: 25px;
+}
+.accordion .active{
+ background: #f4b60d;
 }
