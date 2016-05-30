@@ -1,0 +1,68 @@
+*{
+  font-family: 'Marck Script', cursive;
+}
+.clear{
+  clear:both;
+}
+body{
+  background-image: url(../img/picture.jpg);
+}
+.wrapper{
+  min-height: 575px;
+  width: 608px;
+  margin: 50px auto;
+  background-image: url(../img/wrapper-bgrnd.png);
+  border: 2px solid brown;
+}
+.item-list{
+  list-style: none;
+}
+.item-list li{
+  width: 100%;
+  margin-top: 5px;
+}
+.controlls{
+  height: 20px;
+  width: 210px;
+  margin: 30px auto;
+
+}
+.item-value{
+  margin: auto;
+  margin-left: 19px;
+  height: 22px;
+  width: 130px;
+}
+.item-add{
+  font-family: sans-serif;
+  height: 28px;
+  background: #fff;
+}
+p{
+  font-size: 50px;
+  text-align: center;
+  color: brown;
+}
+.dispaly-item{
+  font-size: 26px;
+  width:310px;
+  overflow: hidden;
+  cursor: pointer;
+  float: left;
+  margin-left: 74px;
+  color: brown;
+}
+.item-delete{
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  margin-right: 112px;
+  color: brown;
+}
+.edit{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 26px;
+  margin-left: 115px;
+}

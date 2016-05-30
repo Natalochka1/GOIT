@@ -5,21 +5,34 @@ ul.slick-dots {
 	left: 459px;
 	bottom: 23px;
 }
-button[type=button]{
-  display: none;
-}
+// button[type=button]{
+//   display: none;
+// }
+
+// .slick-dots li{
+// 	width: 20px;
+// 	height: 20px;
+// 	float: left;
+// 	border: 3px solid $white;
+// 	margin-right: 22px;
+// 	position: relative;
+//     cursor: pointer;
+// }
 
 .slick-dots li{
-	width: 20px;
-	height: 20px;
 	float: left;
-	border: 3px solid $white;
-	margin-right: 22px;
-	position: relative;
-    cursor: pointer;
 }
-.slick-active{
-  background: $black;
+
+.slick-dots button{
+	border: none;
+	border: 5px solid $white;
+	color:transparent;
+	margin: 0 10px;
+	background-color: $white;
+}
+
+.slick-active button{
+  background-color: $black;
 }
 
 button.slick-next.slick-arrow{
