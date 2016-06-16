@@ -1,0 +1,120 @@
+
+.header {
+  color: $white;
+  text-align: center;
+  background-position: 50% 50%;
+  background-repeat: repeat, no-repeat;
+  background-size: cover; 
+}
+.headerBg {
+  display: none;
+}
+.logo {
+  display: block;
+  padding-left: 70px;
+  padding-top: 116px;
+}
+.logo img{
+    width: 178px;
+    height: 20px;
+}
+.login {
+  display: block;
+  padding-top: 20px;
+}
+.log_in input{
+  background: transparent;
+  color: $white;
+  border: none;
+  margin-right: 10px; 
+  font-family: 'robotoregular', sans-serif;
+}
+.log_in input:hover{
+  opacity: 0.7;
+  color: $lightred;
+  text-decoration: underline;
+}
+input[type="submit"]{
+  border: 3px solid $white;
+  padding: 6px 17px;
+  border-radius: 35px;
+  font-family: 'robotoregular', sans-serif;
+} 
+input[type="submit"]:hover{
+  opacity: 0.7;
+  background-color: $active_btn;
+  color: $white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.form-search input{
+  background-color: $lightred;
+  color: $white;
+  border: 2px solid $lightred; 
+  padding: 10px 45px;
+  border-radius: 33px;
+   font-family: 'montserratregular', sans-serif;
+}
+.form-search input:hover{
+  background-color: rgba(243,152,162,0.7);
+  color: $active_txt;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+ 
+}
+.title {
+  display: block;
+  text-align: center;
+  padding-top: 36px;
+}
+.title__name{
+  display: inline-block;
+  color: $white;
+  width: 253px;
+  font-family: 'robotolight', Arial, sans-serif;
+  font-size: 26px;
+}
+.title__text{
+  display: inline-block;
+  font-size: 18px;
+  width: 238px;
+  text-align: center;
+  font-family: 'robotolight', sans-serif;
+}
+.form-search{
+  padding: 20px 0 135px;
+}
+@media (min-width: 321px) {
+  
+.login{
+  float: right;
+  margin-right: 44px;
+  padding-top: 40px;
+}
+.logo{
+  display: block;
+  padding-left: 70px;
+  padding-top: 52px;
+}
+.title__text{
+  width: 100%;
+}
+.form-search input{
+  padding: 10px 30px;
+}
+}
+@media(min-width: 769px) {
+  
+.title{
+  padding-top: 117px;
+}
+.title__name{
+  font-size: 48px;
+  width: 480px;
+  font-family: 'montserratbold', sans-serif;
+}
+.title__text{
+  padding: 8px;
+  font-size: 23px;
+}
+}
