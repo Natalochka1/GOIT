@@ -20,11 +20,8 @@ body,
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   line-height: 1.2;
-  @media #{$small-up}{
-    width: 768px;
-  }
   @media #{$medium-up} {
-    width: 1024px;
+    width: 768px;
   }
   @media #{$large-up} {
     width: 1024px;
@@ -37,11 +34,8 @@ body,
 .container{
   width: 320px;
   margin: 0 auto; 
-  @media #{$small-up}{
-    width: 768px;
-  }
   @media #{$medium-up} {
-    width: 940px;
+    width: 768px;
   }
   @media #{$large-up} {
     width: 1024px;

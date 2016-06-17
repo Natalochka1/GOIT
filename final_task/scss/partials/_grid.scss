@@ -11,14 +11,30 @@
   margin: 0;
   font-family: 'robotolight', sans-serif;
 }
+.grid.js-grid{
+  position: relative;
+  height: 910px;
+  width: 300px;
+}
+.grid.js-grid img{
+  width: 300px;
+  height: 120px;
+  position: absolute;
+}
 .grid-item {
     height: 120px;
+    width: 300px;
     background-color: $darkgray;
     border-radius: 4px;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     float: left; 
     margin: 10px;
+}
+.grid-item img{
+  width: 300px;
+  height: 120px;
+  position: absolute;
 }
 .grid-name{
   text-align: center;
@@ -51,34 +67,51 @@
   background-color: rgba(0, 0, 0, 0.7); 
 }
 @media(min-width: 321px) {
-  
+} 
+@media(min-width: 769px) { 
 .ideas__title{
-  padding: 100px 246px 40px 245px;
+  display: inherit;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
   font-size: 21px;
+}
+.grid.js-grid{
+  position: relative;
+  height: 1010px;
+  width: 748px;
+}
+.grid.js-grid img{
+  width: 236px;
+  height: 310px;
+  position: absolute;
 }
 .grid-item { 
   width: 236px;
-  height: 305px; 
+  height: 310px; 
 }
 .grid-item--width2 { 
   width: 490px;
-  height: 305px; 
+  height: 310px; 
 }
 .grid-item img{
   width: 236px;
-  height: 305px;
+  height: 310px;
   overflow: hidden;
 }
 .grid-item--width2 img{ 
   width: 490px;
-  height: 305px;
+  height: 310px;
   overflow: hidden; 
 }
 }
-@media(min-width: 769px) {
+@media(min-width: 1025px) {
   
 .ideas__title{
-  padding: 100px 246px 40px 300px;
+  display: inherit;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
   font-size: 25px;
 }
 .grid-item{

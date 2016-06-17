@@ -123,7 +123,11 @@
   transition: all 0.2s ease;
   box-shadow: 0px 1px 10px 5px rgba(242,113,125,0.5);
 }
+
 @media(min-width: 321px) {
+}
+
+@media(min-width: 769px) {
   
 .partner-block{
   display: block;
@@ -142,7 +146,7 @@
   margin-left: 200px;
 }
 }
-@media(min-width: 769px) {
+@media(min-width: 1025px) {
   
 .partner-block{
   width: 940px;
