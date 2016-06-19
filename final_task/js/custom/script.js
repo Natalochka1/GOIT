@@ -19,12 +19,13 @@ function ajaxRequest(search) {
 	  // url: 'http://api.pixplorer.co.uk/image?word='+search+'&amount=5&size=tb',
 	  success: function(data) {
 	  	console.log(data);
+
 	    for (var i = 0; i < data.hits.length; i++) {
 	    	var listItem = '<div class="grid-item">'+
                 '<img src="'+data.hits[i].userImageURL+'">'+
                     '<div class="grid-name"><span>'+data.hits[i].tags+'</span></div>'+
             '</div>';
-	    	//console.log(data.images[i]);
+	    	// console.log(data.images[i]);
 	    	$('.js-grid').append(listItem);
 	    }
     	isotopInit();
@@ -60,114 +61,6 @@ function ajaxRequest(search) {
 
 
 
-// $('.grid').masonry({
-//   // options
-//   itemSelector: '.grid-item',
-//   columnWidth: 300
-// });
 
-
-
-// var elem = document.querySelector('.grid');
-// var msnry = new Masonry( elem, {
-//   // options
-//   itemSelector: '.grid-item',
-//   columnWidth: 300
-// });
-
-// // element argument can be a selector string
-// //   for an individual element
-// var msnry = new Masonry( '.grid', {
-//   // options
-// });
-
-// $(window).load(function() {
-
-//     // $('.grid').masonry({
-//     //   // options
-//     //   itemSelector: '.grid-item',
-//     //   columnWidth: 300
-//     //   gutter: 10
-//     // });
-
-//     // init Masonry
-//     var $grid = $('.grid').masonry({
-//       // options
-//       itemSelector: '.grid-item',
-//       columnWidth: '.grid-sizer',
-//       percentPosition: true,
-//       gutter: 20
-//     });
-
-//     // layout Masonry after each image loads
-//     $grid.imagesLoaded().progress( function() {
-//       $grid.masonry('layout');
-//     });
-
-//     $('.fade img').imagefill();
-//     $('.grid-item').imagefill();
-
-// });
-
-// $(function() {
-
-//     var baseURL = 'https://pixabay.com/api/';
-//     var APIKey = '2661500-a86fdddd1f5dc433c40ef8f43';
-
-//     var $searchInput = $('.search__input');
-//     var $resultBlock = $('.result-block');
-
-//     $('.search__form').on('submit', function(e) {
-//         e.preventDefault();
-
-
-//         var query = $searchInput.val();
-
-//         $.ajax({
-//             url: baseURL,
-//             type: 'GET',
-//             dataType: 'jsonp',
-//             data: {
-//                 key: APIKey,
-//                 q: query,
-//                 per_page: 7
-//             }
-//         })
-//         .done(function(data) {
-//             showResults(data);
-//         });
-        
-//     })
-
-
-// });
-
-// function showResults(results) {
-  
-//   var images = results.hits;
-
-//   if (images.length === 0) {
-//     $('.search__message').text('No Image found');
-//     return;
-//   }
-  
-//   $('.grid-item')
-//   .fadeOut('400')
-//   .each(function(index, el) {
-
-//     var title = images[index].tags;
-//     var imageSrc = images[index].webformatURL
-    
-//     $(this).find('span').text(title);
-
-//     $(this).find('.ideas__img').attr('src', imageSrc)
-//       // when image loaded
-//     .load(function() {
-//       $('.grid-item').imagefill()
-//         // some animation
-//       .fadeIn();
-//     });
-//   });
-// };  
 
 
